@@ -9,6 +9,8 @@ docker:
 	--build-arg TARGET_ARCH=${TARGET_ARCH} \
 	--build-arg NVIDIA_IMAGE=${NVIDIA_IMAGE} \
 	--build-arg DEST_DIR=${DEST_DIR} \
+	--network host \
+	--add-host sharefile.neolink.com=172.24.165.251 \
 	. -f=docker/Dockerfile -t ${IMG_TAG}
 
 dockerwithlib:

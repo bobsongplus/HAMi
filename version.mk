@@ -4,8 +4,8 @@ CMDS=scheduler vGPUmonitor
 DEVICES=nvidia
 OUTPUT_DIR=bin
 TARGET_ARCH=amd64
-GOLANG_IMAGE=golang:1.21-bullseye
-NVIDIA_IMAGE=nvidia/cuda:12.3.2-devel-ubuntu22.04
+GOLANG_IMAGE=images.neolink.com/system_containers/golang:1.21-bullseye
+NVIDIA_IMAGE=images.neolink.com/system_containers/cuda:12.3.2-devel-ubuntu22.04
 DEST_DIR=/usr/local/vgpu/
 
 VERSION = v0.0.1
